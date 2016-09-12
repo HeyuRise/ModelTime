@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/discuss_activity_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/backGround"
+    >
+
+        <ImageView
+                android:id="@+id/discuss_acitivity_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_up"
+                android:layout_marginLeft="10dp"
+                android:onClick="onBtnClick"
+        />
+
+        <TextView
+                android:id="@+id/discuss_activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:text="评论页"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+        />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/discuss_activity_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+    >
+
+        <ImageView
+                android:id="@+id/discuss_activity_submit_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_action_send_now"
+                android:layout_alignParentRight="true"
+                android:onClick="onBtnClick"
+        />
+
+        <EditText
+                android:id="@+id/discuss_activity_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/discuss_activity_submit_btn"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+              android:id="@+id/empty_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:textSize="25sp"
+              android:textColor="#ae9bae"
+    />
+
+    <ListView
+            android:id="@+id/discuss_activity_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/discuss_activity_top_layout"
+            android:layout_above="@id/discuss_activity_bottom_layout"
+    />
+
+</RelativeLayout>

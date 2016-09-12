@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              tools:context="com.dxy.medicaltime.chen.activity.ChenMainActivity">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/BookStore_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backGround">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:text="书籍"
+            />
+            <ImageView
+                    android:id="@+id/searc_chen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ClickMenu"
+                    android:layout_toStartOf="@+id/ClickMenu"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"/>
+            <ImageView
+                    android:id="@+id/ClickMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/uc_icon06"
+            />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/BookStore_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:background="@color/backGround"/>
+    <android.support.v4.view.ViewPager
+            android:layout_below="@+id/BookStore_toolbar"
+            android:id="@+id/bookStore_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

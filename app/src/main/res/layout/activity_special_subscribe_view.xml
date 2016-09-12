@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/backGround"
+    >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onBtnClick"
+                android:src="@drawable/ic_up"
+                android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="疾病订阅"
+        />
+
+    </LinearLayout>
+
+    <GridView
+            android:id="@+id/special_subscribe_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:layout_below="@id/top_layout"
+            android:layout_marginTop="5dp"
+    />
+
+    <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#ffab999b"
+            android:layout_below="@id/top_layout"
+            android:text="暂无订阅"
+    />
+
+</RelativeLayout>

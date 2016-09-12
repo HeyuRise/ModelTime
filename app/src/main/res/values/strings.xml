@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MedicalTime</string>
+
+
+    <!--++++++++++++++++++++++++++++fang++++++++++++++++++++++++++++-->
+
+    <string name="info_str">资讯</string>
+    <string name="fingerpost_str">指南</string>
+    <string name="books_str">书籍</string>
+    <string name="public_class_str">公开课</string>
+    <string name="personal_center_str">个人中心</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--++++++++++++++++++++++++++++++++chen+++++++++++++++++++++++++++++++-->
+
+
+    <!--++++++++++++++++++++++++++++++++++sun+++++++++++++++++++++++++++++++++++++++-->
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+    >
+        <TextView
+                android:id="@+id/task_center_imgbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/news_home_icon01"
+                android:text="任务中心"
+        />
+
+        <TextView
+                android:id="@+id/special_imgbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/news_home_icon02"
+                android:text="专题"
+        />
+
+        <TextView
+                android:id="@+id/qa_imgbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/news_home_icon03"
+                android:text="问答"
+        />
+
+        <TextView
+                android:id="@+id/disease_subscribe_imgbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/news_home_icon04"
+                android:text="疾病订阅"
+        />
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f2f2f4"
+            />
+
+</LinearLayout>

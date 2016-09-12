@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dxy.medicaltime">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--++++++++++++++++++shareSDK+++++++++++++++++++++-->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".fang.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--++++++++++++++++++++fang++++++++++++++++++++-->
+        <activity android:name=".fang.activity.DetailsActivity"/>
+        <activity android:name=".fang.activity.FirstSpecialDetailActivity"/>
+        <activity android:name=".fang.activity.GuideDetailActivity"/>
+        <activity android:name=".fang.activity.TaskCenterActivity"/>
+        <activity android:name=".fang.activity.SpecialActivity"/>
+        <activity android:name=".fang.activity.SecondSpecialDetailActivity"/>
+        <activity android:name=".fang.activity.DiscussActivity"/>
+        <activity android:name=".fang.activity.SpecialSubscribeActivity"/>
+
+        <!--+++++++++++++++++++++++++++++++sun++++++++++++++++++++++++-->
+
+        <activity android:name=".sun.activity.SettingActivity" />
+        <activity android:name=".sun.activity.SectionSubActivity" />
+        <activity android:name=".sun.activity.SectionOrderActivity" />
+        <activity android:name=".sun.activity.CollectActivity" />
+        <activity android:name=".sun.activity.QuestionAnswerActivity" />
+        <activity android:name=".sun.activity.StartQAActivity"></activity>
+        <activity android:name=".sun.activity.WorldCountActivity" />
+        <activity android:name=".sun.activity.InviteActivity" />
+        <activity android:name=".sun.activity.AppActivity" />
+        <activity android:name=".sun.activity.AccountActivity" />
+        <activity android:name=".sun.activity.LoginActivity" />
+        <activity android:name=".sun.activity.HistoryScoreActivity" />
+        <activity android:name=".sun.activity.TingDangActivity" />
+        <activity android:name=".sun.activity.FeedBackActivity"/>
+        <activity android:name=".sun.activity.AboutActivity"/>
+
+        <!--+++++++++++++++++++++++chen++++++++++++++++++++++++++-->
+        <activity android:name=".chen.activity.RecommendBooksActivity" />
+        <activity android:name=".chen.activity.TheOneBookClassified" />
+        <activity android:name=".chen.activity.BookDetailActivity" />
+        <activity android:name=".chen.activity.SearchActivity"/>
+        <activity android:name=".chen.activity.NewBooksActivity"/>
+        <activity android:name=".chen.activity.AlreadyHavedBookActivity"/>
+
+        <!--+++++++++++++++++++++shareSDK++++++++++++++++++++++-->
+        <activity
+                android:name="com.mob.tools.MobUIShell"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <data android:scheme="tencent100371282"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <meta-data android:name="AuthorizeAdapter"
+                       android:value="com.example.bluesky.sharesdksharedemo.MyAdapter"></meta-data>
+        </activity>
+        <!--微信分享回调 -->
+        <activity
+                android:name=".wxapi.WXEntryActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="true"
+                android:screenOrientation="portrait"/>
+
+
+    </application>
+
+</manifest>

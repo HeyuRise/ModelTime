@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fang.activity.MainActivity">
+
+    <RadioGroup
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="5dp"
+    >
+        <!--资讯-->
+        <RadioButton
+                android:id="@+id/info_btn"
+                style="@style/bottm_btn"
+                android:drawableTop="@drawable/info_btn_bcg"
+                android:text="@string/info_str"
+                android:checked="true"
+        />
+
+        <RadioButton
+                android:id="@+id/fingerpost_btn"
+                style="@style/bottm_btn"
+                android:drawableTop="@drawable/fingerpost_btn_bcg"
+                android:text="@string/fingerpost_str"
+        />
+
+        <RadioButton
+                android:id="@+id/books_btn"
+                style="@style/bottm_btn"
+                android:drawableTop="@drawable/books_btn_bcg"
+                android:text="@string/books_str"
+        />
+
+        <RadioButton
+                android:id="@+id/public_class_btn"
+                style="@style/bottm_btn"
+                android:drawableTop="@drawable/public_class_btn_bcg"
+                android:text="@string/public_class_str"
+        />
+
+        <RadioButton
+                android:id="@+id/personal_center_btn"
+                style="@style/bottm_btn"
+                android:drawableTop="@drawable/personal_center_btn_bcg"
+                android:text="@string/personal_center_str"
+        />
+
+    </RadioGroup>
+
+    <FrameLayout
+            android:id="@+id/fragments_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_layout"
+    />
+
+</RelativeLayout>

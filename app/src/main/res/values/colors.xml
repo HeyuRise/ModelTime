@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backGround">#6a4c9b</color>
+    <color name="separate">#efeeee</color>
+    <color name="shadow">#55000000</color>
+
+    <!--+++++++++++++++++fang++++++++++++++++++++-->
+    <color name="point_a">#aaa</color>
+    <color name="point_b">#fff</color>
+
+
+</resources>

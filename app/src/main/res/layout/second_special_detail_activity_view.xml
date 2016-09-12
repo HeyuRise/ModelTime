@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/second_special_detail_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/backGround"
+    >
+
+        <ImageButton
+                android:id="@+id/second_special_detail_back_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_up"
+                android:layout_marginLeft="10dp"
+                android:onClick="onBtnClick"
+        />
+
+        <ImageButton
+                android:id="@+id/second_special_detail_share_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_share"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:onClick="onBtnClick"
+        />
+
+        <ImageButton
+                android:id="@+id/second_special_detail_subscribe_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/news_topic_icon01"
+                android:layout_toLeftOf="@id/second_special_detail_share_imgbtn"
+                android:layout_marginRight="10dp"
+                android:onClick="onBtnClick"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/second_special_detail_hearder_view_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/backGround"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/second_special_detail_top_layout"
+    />
+
+    <ListView
+            android:id="@+id/second_special_detail_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/second_special_detail_hearder_view_tv"
+            android:background="#fff"
+    />
+
+</RelativeLayout>

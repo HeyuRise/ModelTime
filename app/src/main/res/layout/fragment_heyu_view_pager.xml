@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    tools:context="com.dxy.medicaltime.sun.fragment.HeyuViewPagerFragment">
+    <ImageView
+        android:id="@+id/heyu_viewPager_img"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/shadow"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/heyu_viewPager_text"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,70 @@
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pull_to_refresh_scrollView"
+    tools:context="com.dxy.medicaltime.sun.fragment.RecommendFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+            android:id="@+id/autoViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"/>
+        <com.dxy.medicaltime.sun.utils.MyListView
+            android:id="@+id/heyu_recommend_listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/shadow"
+            android:orientation="horizontal"
+            android:background="@color/separate"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"/>
+        <RelativeLayout
+            android:id="@+id/advertise"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ImageView
+                android:id="@+id/recommendAdImg"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="170dp" />
+            <TextView
+                android:id="@+id/recommendAdText"
+                android:padding="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/recommendAdSpecial"
+                android:text="专题"
+                android:layout_above="@id/recommendAdText"
+                android:padding="10dp"
+                android:background="@drawable/recommand_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/recommendAdtitle"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:layout_toRightOf="@id/recommendAdSpecial"
+                android:layout_above="@id/recommendAdText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/shadow1"
+            android:orientation="horizontal"
+            android:background="@color/separate"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"/>
+        <com.dxy.medicaltime.sun.utils.MyListView
+            android:id="@+id/heyu_recommend_listView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

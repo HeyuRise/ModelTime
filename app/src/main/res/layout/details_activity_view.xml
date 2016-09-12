@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/backGround"
+    >
+
+        <ImageButton
+                android:id="@+id/details_back_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_up"
+                android:background="@android:color/transparent"
+                android:onClick="onBtnClick"
+        />
+
+        <ImageButton
+                android:id="@+id/details_discuss_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/news_detail_icon04"
+                android:background="@android:color/transparent"
+                android:onClick="onBtnClick"
+        />
+
+        <ImageButton
+                android:id="@+id/details_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/details_discuss_imgbtn"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/news_detail_icon03"
+                android:background="@android:color/transparent"
+                android:onClick="onBtnClick"
+        />
+
+        <FrameLayout
+                android:id="@+id/details_share_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/details_text_size"
+                android:layout_marginRight="20dp"
+        >
+
+            <ImageButton
+                    android:id="@+id/details_share_imgbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_action_share"
+                    android:background="@android:color/transparent"
+                    android:onClick="onBtnClick"
+            />
+
+            <TextView
+                    android:id="@+id/details_activity_share_coint_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:textSize="10dp"
+                    android:textColor="@android:color/white"
+            />
+
+        </FrameLayout>
+
+        <ImageView
+                android:id="@+id/details_collection_imgbtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_toLeftOf="@+id/details_share_container"
+                android:layout_marginRight="20dp"
+                android:scaleType="center"
+                android:onClick="onBtnClick"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/details_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@color/backGround"
+            android:padding="20dp"
+    />
+
+    <WebView
+            android:id="@+id/details_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />
+
+</LinearLayout>

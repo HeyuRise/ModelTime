@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/backGround"
+    >
+
+        <TextView
+                android:id="@+id/info_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="资讯"
+                android:textColor="@android:color/white"
+        />
+
+        <ImageButton
+                android:id="@+id/info_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_search"
+                android:layout_marginRight="10dp"
+        />
+
+        <TextView
+                android:id="@+id/info_add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="33sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/info_search_btn"
+        />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/info_tablayout"
+            android:layout_width="match_parent"
+            android:background="@color/backGround"
+            android:layout_height="45dp"/>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/info_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>
